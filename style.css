@@ -4,14 +4,18 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background: radial-gradient(circle at 20% 20%, #1f1b2e, #0d0c14 45%, #050509);
+  color: #f5f5f5;
 }
 
 .navbar {
   width: 100%;
   height: 50px;
-  background-color: black;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.95), rgba(33, 25, 59, 0.9));
   position: sticky;
   top: 0;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
 }
 
 .navbar-container {
@@ -29,7 +33,8 @@ body {
 
 .logo {
   font-size: 30px;
-  color: red;
+  color: #ff4d67;
+  letter-spacing: 1px;
 }
 
 .menu-container {
@@ -43,10 +48,17 @@ body {
 
 .menu-list-item {
   margin-right: 30px;
+  transition: color 0.3s ease;
 }
 
 .menu-list-item.active {
   font-weight: bold;
+  color: #ff4d67;
+}
+.menu-list-item:hover,
+.menu-list-item:focus {
+  color: #d7b4ff;
+  cursor: pointer;
 }
 .profile-container {
   flex: 2;
@@ -75,6 +87,7 @@ body {
   align-items: center;
   justify-content: space-around;
   position: relative;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
 }
 
 .toggle-icon {
@@ -95,23 +108,34 @@ body {
 .sidebar {
   width: 50px;
   height: 100%;
-  background-color: black;
+  background: linear-gradient(180deg, #0f0c1c, #1b1530);
   position: fixed;
   top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
+  box-shadow: 10px 0 20px rgba(0, 0, 0, 0.35);
 }
 
 .left-menu-icon {
   color: white;
   font-size: 20px;
   margin-bottom: 40px;
+  padding: 10px;
+  border-radius: 12px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.left-menu-icon:hover,
+.left-menu-icon:focus {
+  background-color: rgba(255, 77, 103, 0.15);
+  color: #ff4d67;
+  transform: translateY(-2px);
 }
 
 .container {
-  background-color: #151515;
+  background-color: transparent;
   min-height: calc(100vh - 50px);
   color: white;
 }
@@ -123,6 +147,10 @@ body {
 .featured-content {
   height: 50vh;
   padding: 50px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+  background-size: cover;
+  background-position: center;
 }
 
 .featured-title {
@@ -143,6 +171,17 @@ body {
   border: none;
   outline: none;
   font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 10px 25px rgba(255, 77, 103, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.featured-button:hover,
+.featured-button:focus {
+  background-color: #ff4d67;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(255, 77, 103, 0.45);
 }
 
 .movie-list-container {
@@ -165,6 +204,9 @@ body {
 .movie-list-item {
   margin-right: 30px;
   position: relative;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .movie-list-item:hover .movie-list-item-img {
@@ -185,6 +227,7 @@ body {
   height: 200px;
   object-fit: cover;
   border-radius: 20px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
 }
 
 .movie-list-item-title {
@@ -223,7 +266,17 @@ body {
   bottom: 10px;
   left: 60px;
   opacity: 0;
-  transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out, transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 10px 20px rgba(255, 77, 103, 0.25);
+}
+
+.movie-list-item-button:hover,
+.movie-list-item-button:focus {
+  background-color: #ff4d67;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 24px rgba(255, 77, 103, 0.4);
 }
 
 .arrow {
