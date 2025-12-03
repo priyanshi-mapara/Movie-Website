@@ -201,62 +201,86 @@ body {
 }
 
 .movie-list-item {
-  margin-right: 30px;
   position: relative;
-  background: rgba(255, 255, 255, 0.02);
+  margin-right: 30px;
+  width: 320px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.03);
   border-radius: 20px;
   overflow: hidden;
-  padding: 10px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  transition: transform 0.6s ease;
+}
+
+.movie-list-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.55) 45%, rgba(0, 0, 0, 0.9) 100%);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+
+.movie-list-item:hover {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.movie-list-item:hover::before {
+  opacity: 1;
 }
 
 .movie-list-item:hover .movie-list-item-img {
-  transform: scale(1.2);
-  margin: 0 30px;
-  opacity: 0.3;
+  transform: scale(1.1);
+  filter: brightness(0.45);
 }
 
 .movie-list-item:hover .movie-list-item-title,
 .movie-list-item:hover .movie-list-item-desc,
 .movie-list-item:hover .movie-list-item-button {
   opacity: 1;
+  transform: translateY(0);
 }
 
 .movie-list-item-img {
-  transition: all 1s ease-in-out;
-  width: 270px;
+  display: block;
+  transition: all 0.8s ease-in-out;
+  width: 320px;
   height: 200px;
   object-fit: cover;
   border-radius: 20px;
-  filter: brightness(0.9);
 }
 
 .movie-list-item-title {
-  background-color: rgba(0, 0, 0, 0.65);
-  padding: 4px 12px;
-  font-size: 25px;
-  font-weight: bold;
   position: absolute;
-  top: 10%;
-  left: 50px;
+  top: 18px;
+  left: 20px;
+  padding: 6px 14px;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-size: 22px;
+  font-weight: 800;
   opacity: 0;
-  transition: 1s all ease-in-out;
+  transition: 0.6s all ease-in-out;
+  border-radius: 10px;
 }
 
 .movie-list-item-desc {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 12px;
-  font-size: 14px;
   position: absolute;
-  top: 35%;
-  left: 50px;
-  width: 230px;
+  left: 20px;
+  top: 55%;
+  transform: translateY(-20px);
+  width: calc(100% - 40px);
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.72);
+  font-size: 14px;
+  line-height: 1.4;
   opacity: 0;
-  transition: 1s all ease-in-out;
+  transition: 0.6s all ease-in-out;
+  border-radius: 12px;
 }
 
 .movie-list-item-button {
-  padding: 10px;
+  padding: 10px 14px;
   background: linear-gradient(135deg, #e50914, #ff4d4f);
   color: #fff;
   border-radius: 10px;
@@ -264,10 +288,11 @@ body {
   border: none;
   cursor: pointer;
   position: absolute;
-  bottom: 10px;
-  left: 60px;
+  bottom: 16px;
+  left: 20px;
   opacity: 0;
-  transition: 1s all ease-in-out;
+  transform: translateY(10px);
+  transition: 0.6s all ease-in-out;
   font-weight: 700;
   box-shadow: 0 10px 25px rgba(229, 9, 20, 0.35);
 }
