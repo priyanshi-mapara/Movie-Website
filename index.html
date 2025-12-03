@@ -1,14 +1,17 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <title>Movie Design</title>
 </head>
+
 <body>
     <div class="navbar">
         <div class="navbar-container">
@@ -20,12 +23,14 @@
                     <li class="menu-list-item active">Home</li>
                     <li class="menu-list-item">Movies</li>
                     <li class="menu-list-item">Series</li>
+
                 </ul>
             </div>
-            <div class="toggle">
-                <i class="fas fa-moon toggle-icon"></i>
-                <i class="fas fa-sun toggle-icon"></i>
-                <div class="toggle-ball"></div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -37,56 +42,61 @@
     </div>
     <div class="container">
         <div class="content-container">
-            <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-1.jpg');">
-                <img class="featured-title" src="img/f-t-1.png" alt="Cinema Paradiso logo">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-1.jpg');">
+                <img class="featured-title" src="img/f-t-1.png" alt="">
                 <p class="featured-desc">A boy coming of age in WWII Italy develops a lifelong love affair with movies.</p>
-                <button class="featured-button" type="button" data-trailer="https://www.youtube.com/watch?v=JMyVSD6OvO8">Watch trailer</button>
+                <button class="featured-button" onclick="https://www.youtube.com/watch?v=JMyVSD6OvO8">WATCH</button>
             </div>
             <div class="movie-list-container">
                 <h1 class="movie-list-title">BEST OF ALL TIMES</h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="The Dark Knight poster">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
                             <span class="movie-list-item-title">The Dark Knight</span>
-                            <p class="movie-list-item-desc">After Gordon, Dent and Batman begin an assault on Gotham's organised crime, the mobs hire the Joker to kill Batman.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=GAjBzu8ggi0">Watch</button>
+                            <p class="movie-list-item-desc">After Gordon, Dent and Batman begin an assault on Gotham's organised crime, 
+                                the mobs hire the Joker to kill Batman.</p>
+                            <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=GAjBzu8ggi0">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/2.jpg" alt="Inception poster">
+                            <img class="movie-list-item-img" src="img/2.jpg" alt="">
                             <span class="movie-list-item-title">Inception</span>
                             <p class="movie-list-item-desc">Cobb steals information from his targets by entering their dreams.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=YoHD9XEInc0">Watch</button>
+                            <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=YoHD9XEInc0">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/3.jpg" alt="Avatar poster">
+                            <img class="movie-list-item-img" src="img/3.jpg" alt="">
                             <span class="movie-list-item-title">Avatar</span>
                             <p class="movie-list-item-desc">Jake, who is paraplegic, replaces his twin on the Na'vi inhabited Pandora for a corporate mission.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=5PSNL1qE6VY">Watch</button>
+                            <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=5PSNL1qE6VY">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/4.jpg" alt="Zodiac poster">
+                            <img class="movie-list-item-img" src="img/4.jpg" alt="">
                             <span class="movie-list-item-title">Zodiac</span>
                             <p class="movie-list-item-desc">Robert Graysmith, a cartoonist by profession, finds himself obsessively thinking about the Zodiac killer.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=yNncHPl1UXg">Watch</button>
+                            <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=yNncHPl1UXg">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/5.jpg" alt="Avengers poster">
+                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
                             <span class="movie-list-item-title">Avengers</span>
-                            <p class="movie-list-item-desc">Nick Fury is compelled to launch the Avengers Initiative when Loki poses a threat to planet Earth.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=hA6hldpSTF8">Watch</button>
+                            <p class="movie-list-item-desc">Nick Fury is compelled to launch the Avengers 
+                                Initiative when Loki poses a threat to planet Earth. </p>
+                            <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=hA6hldpSTF8">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/6.jpg" alt="The Great Gatsby poster">
+                            <img class="movie-list-item-img" src="img/6.jpg" alt="">
                             <span class="movie-list-item-title">The Great Gatsby</span>
-                            <p class="movie-list-item-desc">Nick Carraway, a World War I veteran who moves to New York with the hope of making it big, finds himself attracted to Jay Gatsby and his flamboyant lifestyle.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=rARN6agiW7o">Watch</button>
+                            <p class="movie-list-item-desc">Nick Carraway, a World War I veteran who moves to New York with the hope of making it big, finds himself attracted 
+                                to Jay Gatsby and his flamboyant lifestyle.</p>
+                            <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=rARN6agiW7o">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/7.jpg" alt="Get Out poster">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
                             <span class="movie-list-item-title">Get Out</span>
-                            <p class="movie-list-item-desc">Chris, an African-American man, decides to visit his Caucasian girlfriend's parents during a weekend getaway.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=DzfpyUB60YY">Watch</button>
+                            <p class="movie-list-item-desc">Chris, an African-American man, decides to visit his Caucasian 
+                                girlfriend's parents during a weekend getaway. </p>
+                            <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=DzfpyUB60YY">Watch</button>
                         </div>
                     </div>
                     <i class="fas fa-chevron-right arrow"></i>
@@ -97,101 +107,119 @@
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/8.jpg" alt="Shrek poster">
+                            <img class="movie-list-item-img" src="img/8.jpg" alt="">
                             <span class="movie-list-item-title">Shrek</span>
-                            <p class="movie-list-item-desc">Shrek is an anti-social and highly-territorial green ogre who loves the solitude of his swamp.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=CwXOrWvPBPk">Watch</button>
+                            <p class="movie-list-item-desc">Shrek is an anti-social and highly-territorial green 
+                                ogre who loves the solitude of his swamp.</p>
+                            <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/9.jpg" alt="Boss Baby poster">
+                            <img class="movie-list-item-img" src="img/9.jpg" alt="">
                             <span class="movie-list-item-title">Boss Baby</span>
-                            <p class="movie-list-item-desc">Now adults, Tim Templeton is a stay-at-home dad for two adorable daughters, while his estranged brother, Ted, is a big-shot CEO.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=k397HRbTtWI">Watch</button>
+                            <p class="movie-list-item-desc">Now adults, Tim Templeton is a stay-at-home dad for two adorable daughters, 
+                                while his estranged brother, Ted, is a big-shot CEO.</p>
+                            <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/10.jpg" alt="Madagascar poster">
+                            <img class="movie-list-item-img" src="img/10.jpg" alt="">
                             <span class="movie-list-item-title">Madagascar</span>
-                            <p class="movie-list-item-desc">Four spoiled animals from the New York Central Zoo escape with the unintentional help of four fugitive penguins.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=fq5zU9T_Hl4">Watch</button>
+                            <p class="movie-list-item-desc">Four spoiled animals from the New York Central Zoo escape with the 
+                                unintentional help of four fugitive penguins. </p>
+                            <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=fq5zU9T_Hl4">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/11.jpg" alt="Kung Fu Panda poster">
+                            <img class="movie-list-item-img" src="img/11.jpg" alt="">
                             <span class="movie-list-item-title">Kung Fu Panda</span>
-                            <p class="movie-list-item-desc">Po, a clumsy panda, is a kung fu fanatic who lives in the Valley of Peace, unable to realize his dream of learning kung fu.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=PXi3Mv6KMzY">Watch</button>
+                            <p class="movie-list-item-desc">Po, a clumsy panda, is a 
+                                kung fu fanatic who lives in the Valley of 
+                                Peace, unable to realize his dream of learning kung fu.</p>
+                            <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/12.jpg" alt="How to Train Your Dragon poster">
-                            <span class="movie-list-item-title">How to Train Your Dragon</span>
-                            <p class="movie-list-item-desc">Hiccup, a Viking, must kill a dragon to mark his passage into manhood and be initiated into his tribe.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=oKiYuIsPxYk">Watch</button>
+                            <img class="movie-list-item-img" src="img/12.jpg" alt="">
+                            <span class="movie-list-item-title">How to train your dragon</span>
+                            <p class="movie-list-item-desc">Hiccup, a Viking, must kill a dragon to mark his passage 
+                                into manhood and be initiated into his tribe.</p>
+                            <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/13.jpg" alt="After Earth poster">
+                            <img class="movie-list-item-img" src="img/13.jpg" alt="">
                             <span class="movie-list-item-title">After Earth</span>
-                            <p class="movie-list-item-desc">Kitai and his father Cypher crash-land on Earth a thousand years after cataclysmic events force humans to flee it.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=CZIt20emgLY">Watch</button>
+                            <p class="movie-list-item-desc">Kitai and his father Cypher crash-land on Earth a thousand years after 
+                                cataclysmic events force humans to flee it.</p>
+                            <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/7.jpg" alt="Get Out poster">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
                             <span class="movie-list-item-title">Get Out</span>
-                            <p class="movie-list-item-desc">Chris, an African-American man, decides to visit his Caucasian girlfriend's parents during a weekend getaway.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=DzfpyUB60YY">Watch</button>
+                            <p class="movie-list-item-desc">Chris, an African-American man, decides to visit his Caucasian 
+                                girlfriend's parents during a weekend getaway. </p>
+                            <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=DzfpyUB60YY">Watch</button>
                         </div>
                     </div>
                     <i class="fas fa-chevron-right arrow"></i>
                 </div>
             </div>
-            <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-2.jpg');">
-                <img class="featured-title" src="img/f-t-2.png" alt="Forrest Gump logo">
-                <p class="featured-desc">Forrest, a man with low IQ, recounts the early years of his life when he found himself in the middle of key historical events. All he wants now is to be reunited with his childhood sweetheart, Jenny.</p>
-                <button class="featured-button" type="button" data-trailer="https://www.youtube.com/watch?v=bLvqoHBptjg">Watch trailer</button>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-2.jpg');">
+                <img class="featured-title" src="img/f-t-2.png" alt="">
+                <p class="featured-desc">Forrest, a man with low IQ, recounts the early years of his life when he found himself in the middle of key historical events. 
+                    All he wants now is to be reunited with his childhood sweetheart, Jenny.</p>
+                <button class="featured-button">WATCH</button>
             </div>
             <div class="movie-list-container">
                 <h1 class="movie-list-title">HIGHEST RATED</h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="The Dark Knight poster">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
                             <span class="movie-list-item-title">The Dark Knight</span>
-                            <p class="movie-list-item-desc">After Gordon, Dent and Batman begin an assault on Gotham's organised crime, the mobs hire the Joker to kill Batman.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=GAjBzu8ggi0">Watch</button>
+                            <p class="movie-list-item-desc">After Gordon, Dent and Batman begin an assault on Gotham's organised crime, 
+                                the mobs hire the Joker to kill Batman.</p>
+                            <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=GAjBzu8ggi0" >Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/4.jpg" alt="Zodiac poster">
-                            <span class="movie-list-item-title">Zodiac</span>
-                            <p class="movie-list-item-desc">Robert Graysmith, a cartoonist by profession, finds himself obsessively thinking about the Zodiac killer.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=yNncHPl1UXg">Watch</button>
+                            <div class="movie-list-item">
+                                <img class="movie-list-item-img" src="img/4.jpg" alt="">
+                                <span class="movie-list-item-title">Zodiac</span>
+                                <p class="movie-list-item-desc">Robert Graysmith, a cartoonist by profession, finds himself obsessively thinking about the Zodiac killer.</p>
+                                <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=yNncHPl1UXg">Watch</button>
+                            </div>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/15.jpg" alt="Shutter Island poster">
+                            <img class="movie-list-item-img" src="img/15.jpg" alt="">
                             <span class="movie-list-item-title">Shutter Island</span>
-                            <p class="movie-list-item-desc">Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a remote island in order to investigate.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=5iaYLCiq5RM">Watch</button>
+                            <p class="movie-list-item-desc">Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a remote 
+                                island in order to investigate.</p>
+                            <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/8.jpg" alt="Shrek poster">
+                            <img class="movie-list-item-img" src="img/8.jpg" alt="">
                             <span class="movie-list-item-title">Shrek</span>
-                            <p class="movie-list-item-desc">Shrek is an anti-social and highly-territorial green ogre who loves the solitude of his swamp.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=CwXOrWvPBPk">Watch</button>
+                            <p class="movie-list-item-desc">Shrek is an anti-social and highly-territorial green 
+                                ogre who loves the solitude of his swamp.</p>
+                            <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/5.jpg" alt="Avengers poster">
+                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
                             <span class="movie-list-item-title">Avengers</span>
-                            <p class="movie-list-item-desc">Nick Fury is compelled to launch the Avengers Initiative when Loki poses a threat to planet Earth.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=hA6hldpSTF8">Watch</button>
+                            <p class="movie-list-item-desc">Nick Fury is compelled to launch the Avengers 
+                                Initiative when Loki poses a threat to planet Earth. </p>
+                            <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=hA6hldpSTF8">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/19.jpg" alt="The Truman Show poster">
+                            <img class="movie-list-item-img" src="img/19.jpg" alt="">
                             <span class="movie-list-item-title">The Truman Show</span>
-                            <p class="movie-list-item-desc">An insurance salesman is oblivious of the fact that his entire life is a TV show and his family members are mere actors.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=dlnmQbPGuls">Watch</button>
+                            <p class="movie-list-item-desc">An insurance salesman is oblivious of the fact that his entire life 
+                                is a TV show and his family members are mere actors. </p>
+                            <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="The Dark Knight poster">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
                             <span class="movie-list-item-title">The Dark Knight</span>
-                            <p class="movie-list-item-desc">After Gordon, Dent and Batman begin an assault on Gotham's organised crime, the mobs hire the Joker to kill Batman.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=GAjBzu8ggi0">Watch</button>
+                            <p class="movie-list-item-desc">After Gordon, Dent and Batman begin an assault on Gotham's organised crime, 
+                                the mobs hire the Joker to kill Batman.</p>
+                            <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=GAjBzu8ggi0">Watch</button>
                         </div>
                     </div>
                     <i class="fas fa-chevron-right arrow"></i>
@@ -202,46 +230,51 @@
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/17.jpg" alt="La La Land poster">
+                            <img class="movie-list-item-img" src="img/17.jpg" alt="">
                             <span class="movie-list-item-title">La La Land</span>
-                            <p class="movie-list-item-desc">Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire to do what they love.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=0pdqf4P9MB8">Watch</button>
+                            <p class="movie-list-item-desc">Sebastian (Ryan Gosling) and Mia (Emma Stone) are 
+                                drawn together by their common desire to do what they love.</p>
+                            <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/18.jpg" alt="Whiplash poster">
+                            <img class="movie-list-item-img" src="img/18.jpg" alt="">
                             <span class="movie-list-item-title">Whiplash</span>
                             <p class="movie-list-item-desc">Andrew enrols in a music conservatory to become a drummer.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=7d_jQycdQGo">Watch</button>
+                            <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/19.jpg" alt="The Truman Show poster">
+                            <img class="movie-list-item-img" src="img/19.jpg" alt="">
                             <span class="movie-list-item-title">The Truman Show</span>
-                            <p class="movie-list-item-desc">An insurance salesman is oblivious of the fact that his entire life is a TV show and his family members are mere actors.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=dlnmQbPGuls">Watch</button>
+                            <p class="movie-list-item-desc">An insurance salesman is oblivious of the fact that his entire life 
+                                is a TV show and his family members are mere actors. </p>
+                            <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/7.jpg" alt="Get Out poster">
+                            <img class="movie-list-item-img" src="img/7.jpg" alt="">
                             <span class="movie-list-item-title">Get Out</span>
-                            <p class="movie-list-item-desc">Chris, an African-American man, decides to visit his Caucasian girlfriend's parents during a weekend getaway.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=DzfpyUB60YY">Watch</button>
+                            <p class="movie-list-item-desc">Chris, an African-American man, decides to visit his Caucasian 
+                                girlfriend's parents during a weekend getaway. </p>
+                            <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=DzfpyUB60YY">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/2.jpg" alt="Inception poster">
-                            <span class="movie-list-item-title">Inception</span>
-                            <p class="movie-list-item-desc">Cobb steals information from his targets by entering their dreams.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=YoHD9XEInc0">Watch</button>
+                                <img class="movie-list-item-img" src="img/2.jpg" alt="">
+                                <span class="movie-list-item-title">Inception</span>
+                                <p class="movie-list-item-desc">Cobb steals information from his targets by entering their dreams.</p>
+                                <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=YoHD9XEInc0">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/15.jpg" alt="Shutter Island poster">
+                            <img class="movie-list-item-img" src="img/15.jpg" alt="">
                             <span class="movie-list-item-title">Shutter Island</span>
-                            <p class="movie-list-item-desc">Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a remote island in order to investigate.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=5iaYLCiq5RM">Watch</button>
+                            <p class="movie-list-item-desc">Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a remote 
+                                island in order to investigate.</p>
+                            <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/10.jpg" alt="Madagascar poster">
+                            <img class="movie-list-item-img" src="img/10.jpg" alt="">
                             <span class="movie-list-item-title">Madagascar</span>
-                            <p class="movie-list-item-desc">Four spoiled animals from the New York Central Zoo escape with the unintentional help of four fugitive penguins.</p>
-                            <button class="movie-list-item-button" type="button" data-trailer="https://www.youtube.com/watch?v=fq5zU9T_Hl4">Watch</button>
+                            <p class="movie-list-item-desc">Four spoiled animals from the New York Central Zoo escape with the 
+                                unintentional help of four fugitive penguins. </p>
+                            <button class="movie-list-item-button" onclick="https://www.youtube.com/watch?v=fq5zU9T_Hl4" >Watch</button>
                         </div>
                     </div>
                     <i class="fas fa-chevron-right arrow"></i>
@@ -251,4 +284,5 @@
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
